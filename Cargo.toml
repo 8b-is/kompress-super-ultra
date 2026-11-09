@@ -1,9 +1,24 @@
 [package]
 name = "kompress-super-ultra"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
-description = "Headroom + Kompress-Super-Ultra CORE with live WebUI & exact p/q rational accounting"
-license = "MIT"
+rust-version = "1.75"
+authors = ["Peter Jozsef Lodri <peter@8b.is>"]
+description = "Headroom + Kompress-Super-Ultra CORE with 4-role semantic folding, live WebSocket WebUI, and exact p/q rational accounting"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/8b-is/kompress-super-ultra"
+
+[lib]
+name = "kompress_super_ultra"
+path = "src/lib.rs"
+
+[[bin]]
+name = "kompress-super-ultra"
+path = "src/main.rs"
+
+[[bench]]
+name = "benchmark"
+harness = false
 
 [dependencies]
 axum = { version = "0.7", features = ["ws", "macros"] }
