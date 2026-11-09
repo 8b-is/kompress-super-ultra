@@ -1,0 +1,25 @@
+[package]
+name = "kompress-super-ultra"
+version = "0.1.0"
+edition = "2021"
+description = "Headroom + Kompress-Super-Ultra CORE with live WebUI & exact p/q rational accounting"
+license = "MIT"
+
+[dependencies]
+axum = { version = "0.7", features = ["ws", "macros"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tower-http = { version = "0.5", features = ["cors", "fs"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+num-rational = { version = "0.4", features = ["serde"] }
+num-bigint = { version = "0.4", features = ["serde"] }
+regex = "1.13.1"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
