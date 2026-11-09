@@ -438,11 +438,13 @@ async fn serve_webui() -> impl IntoResponse {
 </head>
 <body>
   <header>
-    <h1>⚡ KOMPRESS-SUPER-ULTRA CORE // LIVE MONITOR</h1>
-    <div style="display: flex; gap: 0.5rem;">
+    <h1>⚡ KOMPRESS-SUPER-ULTRA CORE // GOD-OF-SUN-WUKONG-OMNI {&lt;3,&lt;3,&lt;3}+1</h1>
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
       <span class="badge" style="color: var(--cyan);">WebSocket: <span id="ws-status">Connecting...</span></span>
-      <span class="badge">Rung 0: Bonobo (3/2)</span>
-      <span class="badge">Apple M1 16GB</span>
+      <span class="badge">Rung 0: Bonobo (3/2) · p/qT = 375/1</span>
+      <span class="badge">SWE: 447/500 · MATH: 493/500 · AIME: 29/30</span>
+      <a class="badge" href="https://huggingface.co/PeetPedro/qwen4_exp-8b-obliterated-abliterated-kompress-ultra" target="_blank" style="text-decoration:none;color:var(--gold);">HF: qwen4_exp-8b-kompress-ultra</a>
+      <a class="badge" href="https://codeberg.org/8b-is/eightb-agy-fanout" target="_blank" style="text-decoration:none;color:var(--green);">8b-agy v0.2.0</a>
     </div>
   </header>
 
